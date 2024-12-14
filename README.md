@@ -22,7 +22,7 @@ Layer 1 is the basis of the network, called a **swarm**, of peer-to-peer hosts w
 
 It also offer **Bridges** to services which use **Directed Acyclic Graph (DAG)**.
 
-#### TheBorneoEcosystem: A Block Lattice For The Future
+### TheBorneoEcosystem: A Block Lattice For The Future
 
 [[RFCs] TheBorneoEcosystem](https://github.com/sileneundula/TheBorneoEcosystem)
 
@@ -42,7 +42,11 @@ A modular tagging system that offers ways of customizing tags and keywords for f
 
 #### SlinkyStorage
 
-A storage system for data with many different node types.
+A storage system for data with many different node types. May integrate with IPFS.
+
+#### [Bin] Slinkr
+
+An executable for interacting with the SlinkyNetwork and gathering data.
 
 ## How It Works
 
