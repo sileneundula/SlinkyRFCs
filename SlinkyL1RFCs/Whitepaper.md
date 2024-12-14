@@ -29,6 +29,10 @@ Noise encryption is used using the public key to authenticate and generating eph
 
 Slinky offers security through **Noise** as opposed to **TLS**.
 
+### Cryptography
+
+It uses ED25519 by default, but can also use SECP256k1 and ECDSA. The PeerID is derived from the public keys of these keys. These are usually ephermal keys that are generated each time, although static keys can also be used in certain situations.
+
 ## 4. Behaviour
 
 The implemented behaviour of the network is as follows:
@@ -41,7 +45,3 @@ The implemented behaviour of the network is as follows:
 4. Identify
 
 More will be added.
-
-### Cryptography
-
-It uses ED25519 by default, but can also use SECP256k1 and ECDSA. The PeerID is derived from the public keys of these keys. These are usually ephermal keys that are generated each time, although static keys can also be used in certain situations.
