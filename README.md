@@ -6,9 +6,11 @@
 
 It is written in pure-rust using the `libp2p` and `tokio` library with custom protocols as well as access to different resources like block lattices (DAG) for services, srvless logic, and overlay networks for anonymity.
 
+It offers ease of use with more advanced and some modular features added to it.
+
 ## Philosphy
 
-Slinky supports the right to privacy, security, anonymity (in some cases), and focuses on being easy for the client to use, with more advanced features customizable.
+slinky supports the right to privacy, security, anonymity (in some cases), integrity, and focuses on ease of use and minimalism with modularity/extendability. It offers advanced features seperate from other projects.
 
 ## Features
 
@@ -30,18 +32,31 @@ It also offer **Bridges** to services which use **Directed Acyclic Graph (DAG)**
 
 **TheBorneoEcosystem** can be quite complicated and is divided into smaller pieces to make it easier to download pieces of the chain without having to download the entire chain.
 
-Workers and Services are employed to ensure tasks be done which may include **incentives**.
+Workers and Services are employed to ensure tasks be done which may include **incentives**. There are many roles on the network.
 
-#### LamentSearch
+SumatraChains are added as well, which can differ from each other and act as a sidechain. Each representative can run their own services, chains, or other actions.
 
-An indexing mechanism that offers ways of customizing tags and keywords for finding data through a stricter search way that is efficient.
+#### LamentSearch For SlinkyNet
+
+A modular tagging system that offers ways of customizing tags and keywords for finding data through a stricter search way that is efficient.
+
+#### SlinkyStorage
+
+A storage system for data with many different node types.
 
 ## How It Works
 
-The simple idea of Slinky is that it is peer-to-peer at layer 1. It is designed as a new internet seperate from the other internet with special functions and custom protocols to make it easy for peers to interact with each other.
+Currently, it offers 4 base protocols for the slinkynetwork. These are:
+
+1. Relay
+2. Ping
+3. Discovery (KAD DHT)
+4. Identify
+
+Custom protocols are being implemented as well as an overlay network built on top of the network.
 
 ### How Peer Discovery Works
 
-**Peer Discovery** is done using the Kademelia DHT protocol to find peers. This offers a decentralized approach to finding nodes derived from their public key.
+**Peer Discovery** is done using the Kademelia DHT protocol to find peers. This offers a decentralized approach to finding nodes derived from their public key. You can use the **identify** protocol to broadcast your Peer ID into the DHT.
 
 **Cryptography Note:** It derives its keypair from ED25519, ECDSA, or SECP256k1, ED25519 being the default. It will also most likely support RSA.
