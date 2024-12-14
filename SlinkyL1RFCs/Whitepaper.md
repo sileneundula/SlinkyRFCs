@@ -1,4 +1,4 @@
-# SlinkyNet: A Novel, Layer-1, Decentralized, Peer-To-Peer Network That Interacts With The BorneoEcosystem To Deliver A New Internet Experience Seperate
+# SlinkyNet: A Novel, Layer-1, Decentralized, Peer-To-Peer Network That Interacts With The BorneoEcosystem To Deliver A New Internet Experience Seperate From Other Constructions
 
 **Author:** `silene`
 
